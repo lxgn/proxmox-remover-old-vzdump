@@ -1,6 +1,9 @@
 # proxmox-remover-old-vzdump
 We clear the dump folder from old archives from the console
 
+Everyone faced a situation where the storage is full, there are a lot of archives, and manually deleting is a long time.
+
+Все сталкивались ситуацией, когда хранилище забито, архивов много, а вручную удалять - долго.
 
 ## Install
 
