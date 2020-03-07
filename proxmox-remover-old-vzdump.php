@@ -49,10 +49,15 @@ foreach($out as $k=>$v2)
     
 }
 //print_r($del);
+$num = count($del);
+$nn = 0;
 foreach($del as $v)
 {
+$nn ++;
 //    $exec_mas[] = "mv $dir/$v $dir/del/$v";
+    $exec_mas[] = "echo \"now remove: $v ($nn of $num)\"";
     $exec_mas[] = "rm $dir/$v";
+    $exec_mas[] = "";
 }
 //print_r($exec_mas);
 $txt = implode("\n",$exec_mas);
